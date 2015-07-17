@@ -21,4 +21,12 @@ var totalPrice = Number(shoppingItems[0]) + Number(shoppingItems[1]) + Number(sh
 totalPrice -= coupon;//This line shows the use of the assignment operator -= by subtracting the value of the variable coupon before sales tax is added into the total
 var Tax = totalPrice * salesTax; // This line calculates the tax by multiplying it by the total price of the purchase
 totalPrice += Tax; // This line uses another assignment operator, +=, to add the value of the variable Tax to the variable of totalPrice
+var outPutString = "Your total price is " + totalPrice + " dollars."; // This line indicates the value for the variable outPutString to be a string including the final total with the coupon and sales tax factored in
+console.log(outPutString); // This line tells the machine to output the value of the variable outPutString into the browser's console.
 
+/*I entered 20 for redShirt, 25 for blueShirt, 30 for purpleShirt, and 40 for tealShirt to get a total price of $111.30.
+
+ */
+/*I entered 90 for redShirt, 30 for blueShirt, 75 for purpleShirt, and 300 for tealShirt to get a total price of $519.40.
+
+*/
