@@ -4,14 +4,16 @@
 
 //alert("Good job! JavaScript works! "); //Testing my JavaScript file connection
 
+
+// Calculate the total price of a purchase including a coupon and sales tax.
+
 //variables
 
-var purchaseItems = []; //This line indicates the array
-var arrayIndex = 0; // This line defines the value of arrayIndex as 0
-const salesTax = 0.06; // This is the constant salesTax to be calculated into the total
-var purchaseTotal; // This line declares the variable purchaseTotal
 
-purchaseItems[arrayIndex] = prompt("How much does the red shirt cost?"); //Prompting the user to enter the cost of a red shirt.
-console.log(arrayIndex); // This prints out the current value of arrayIndex
-console.log("purchaseItems[0]="  + purchaseItems[arrayIndex]); //This outputs the first value of the array
+const salesTax = .06;//This line declares the value of .06 to the const salesTax
+const coupon = 5; // This line declares the value of 5 to the const of coupon
+var redShirt = prompt("How much does the red shirt cost?"); // This prompts the user to input the value for the variable of redShirt
+var blueShirt = prompt("How much does the blue shirt cost?");// This line prompts the user to input the value for the variable of blueShirt
+var purpleShirt = prompt("How much does the purple shirt cost?"); // This line prompts the user to input the value for the variable of purpleShirt
+var tealShirt = prompt("how much does the teal shirt cost?"); // This line prompts the user to input the value for the variable of tealShirt
 
