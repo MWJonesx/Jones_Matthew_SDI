@@ -18,4 +18,7 @@ var purpleShirt = prompt("How much does the purple shirt cost?"); // This line p
 var tealShirt = prompt("how much does the teal shirt cost?"); // This line prompts the user to input the value for the variable of tealShirt
 var shoppingItems=[redShirt,blueShirt, purpleShirt, tealShirt]; // This line shows the array of the four variables
 var totalPrice = Number(shoppingItems[0]) + Number(shoppingItems[1]) + Number(shoppingItems[2]) + Number(shoppingItems[3]); //This line shows the use of Array Index Notation
+totalPrice -= coupon;//This line shows the use of the assignment operator -= by subtracting the value of the variable coupon before sales tax is added into the total
+var Tax = totalPrice * salesTax; // This line calculates the tax by multiplying it by the total price of the purchase
+totalPrice += Tax; // This line uses another assignment operator, +=, to add the value of the variable Tax to the variable of totalPrice
 
