@@ -7,13 +7,15 @@
 
 
 //alert("JavaScript works!");
-var budget = 100;
-var iPhonePrice = 199.99;
-var wonLottery = true;
+// determines whether a student meets the minimum GPA requirements to graduate
 
-//if the price of the phone is less than our budget OR we win the lottery
-if(iPhonePrice < budget || wonLottery){ //This translates to if the iPhone price is less than the budget OR you win the lottery, then you can buy the phone
-    console.log("We can buy the phone!");
-} else {
-    console.log("No phone for you!");
-}
+var gpa = 48;
+
+//if the student is over the min 2.0 score, the student can graduate
+/*if(gpa > 2.0){
+    console.log("You can graduate!");
+}else{
+    console.log("GPA is too low!");
+}*/
+
+(gpa >2.0) ? console.log("You can graduate!") : console.log("GPA is too low!"); //this is the same thing as the if else conditional statement that has been commented out above.
