@@ -11,11 +11,13 @@
 
 // if a child is old enough to ride a roller coaster
 
-var oldEnough = true;
+var oldEnough = false;
 
 // if the child is old enough, print ot the console "You can ride the coaster!"
 
 if(oldEnough){
     //code performed if the condition is true
     console.log("You can ride the coaster!");
+}else{
+    console.log("You are not tall enough to ride the coaster!");
 }
