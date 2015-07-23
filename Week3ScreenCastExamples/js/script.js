@@ -7,17 +7,43 @@
 
 //Basic "skeleton" for conditional statements
 
-if(condition){
-    actions();
+//if(condition){
+//    actions();
+//} else {
+//    actions();
+//}
+//
+////Example of how to use a conditional statement
+//
+//sunny = true;
+//
+//if(sunny){
+//    goToTheBeach();
+//} else {
+//    goToTheMovies();
+//}
+
+
+//Using conditional operators
+// > greater than
+// < less than
+// >= greater than or equal to
+// <== less than or equal to
+// != not equal to
+// == exactly equal to
+
+
+temp = 82;
+
+if(temp>70) {           // This block of code means that if the temperature is greater than 70 degrees we will go to the beach but if not then we will go to the movies
+    goToTheBeach();
 } else {
-    actions();
+    goToTheMovies();
 }
 
-//Example of how to use a conditional statement
+temp = 82
 
-sunny = true;
-
-if(sunny){
+if (temp == 75) {      // This block of code means that if the temperature is EXACTLY 75 degrees we will go to the beach but if not then we will go to the movies.
     goToTheBeach();
 } else {
     goToTheMovies();
