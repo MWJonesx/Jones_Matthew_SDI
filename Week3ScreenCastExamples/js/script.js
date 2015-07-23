@@ -7,15 +7,17 @@
 
 
 //alert("JavaScript works!");
-// determines whether a student meets the minimum GPA requirements to graduate
+ var age = 11;
+var book;
 
-var gpa = 48;
+//if the child is under 10, they get Green Eggs and Ham, otherwise they get The Time Machine
+/*if(age <10){
+    book = "Green Eggs and Ham";
+}else {
+    book = ("The Time Machine");
+}
+console.log(book);*/
 
-//if the student is over the min 2.0 score, the student can graduate
-/*if(gpa > 2.0){
-    console.log("You can graduate!");
-}else{
-    console.log("GPA is too low!");
-}*/
+book = (age <10) ? "Green Eggs and Ham" : "The Time Machine";
+console.log(book);   // This Ternary is the same as the above if else conditional statement
 
-(gpa >2.0) ? console.log("You can graduate!") : console.log("GPA is too low!"); //this is the same thing as the if else conditional statement that has been commented out above.
