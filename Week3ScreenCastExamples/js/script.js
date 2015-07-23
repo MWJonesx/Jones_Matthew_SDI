@@ -11,13 +11,27 @@
 
 // if a child is tall enough to ride a roller coaster
 
-var kidHeight = 50;
+var kidHeight = 47;
 var minHeight = 48;
 
 // if the child is tall enough, print out to the console "You can ride the coaster!"
 // if the kid is over 48 inches in height
+//if the kid is wearing shoes that give him 2 extra inches in height
 
-if(kidHeight > minHeight){
+if(kidHeight + 2 > minHeight){
+    //code performed if the condition is true
+    console.log("You can ride the coaster!");
+}
+
+var kidHeight = 47;
+var minHeight = 48;
+var sneakerLift = 2;
+
+// if the child is tall enough, print out to the console "You can ride the coaster!"
+// if the kid is over 48 inches in height
+//if the kid is wearing shoes that give him 2 extra inches in height
+
+if(kidHeight + sneakerLift > minHeight){
     //code performed if the condition is true
     console.log("You can ride the coaster!");
 }
