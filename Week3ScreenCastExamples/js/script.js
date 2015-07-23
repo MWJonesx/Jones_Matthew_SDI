@@ -9,15 +9,15 @@
 //alert("JavaScript works!");
 
 
-// if a child is old enough to ride a roller coaster
+// if a child is tall enough to ride a roller coaster
 
-var oldEnough = false;
+var kidHeight = 50;
+var minHeight = 48;
 
-// if the child is old enough, print ot the console "You can ride the coaster!"
+// if the child is tall enough, print out to the console "You can ride the coaster!"
+// if the kid is over 48 inches in height
 
-if(oldEnough){
+if(kidHeight > minHeight){
     //code performed if the condition is true
     console.log("You can ride the coaster!");
-}else{
-    console.log("You are not tall enough to ride the coaster!");
 }
