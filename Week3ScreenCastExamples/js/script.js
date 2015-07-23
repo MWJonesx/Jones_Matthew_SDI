@@ -18,20 +18,24 @@ var minHeight = 48;
 // if the kid is over 48 inches in height
 //if the kid is wearing shoes that give him 2 extra inches in height
 
-if(kidHeight + 2 > minHeight){
+if(kidHeight > minHeight){
     //code performed if the condition is true
     console.log("You can ride the coaster!");
+}
+if(kidHeight <= minHeight){
+    console.log("Sorry kid, you've got some growing to do first!");
 }
 
 var kidHeight = 47;
 var minHeight = 48;
-var sneakerLift = 2;
 
 // if the child is tall enough, print out to the console "You can ride the coaster!"
 // if the kid is over 48 inches in height
 //if the kid is wearing shoes that give him 2 extra inches in height
 
-if(kidHeight + sneakerLift > minHeight){
+if(kidHeight > minHeight){
     //code performed if the condition is true
     console.log("You can ride the coaster!");
+} else {
+    console.log("Sorry kid, you've got some growing to do first!");
 }
