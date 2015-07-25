@@ -54,4 +54,7 @@ if(Number (studentAge) === Number (ageForPermit)) { //the variables studentAge a
     if(vehicle === ""){ //this sets up what will happen if the user enters nothing
         vehicle = prompt("I'm sorry I didn't get that. \nDo you have a vehicle with which to take the driving test? \n(yes or no, case sensitive)"); //this is the message that the user will get if they enter nothing into the first dialog box
         console.log("You answered " + vehicle + "."); // this is what is outputted onto the console once the user answers the second prompt
-    }
+    }var output2 = (vehicle != "no" && vehicle != "") ? "You have required vehicle to take the driving test to get your Driver's License!" : "Sorry, you do not have the required vehicle to take the test to get your Driver's License at this time."; //this is a ternary operation. the computer determines if the user has entered anything but no and nothing. If the user falls in that category the output is the first string and if they don't fall in that category the output is the second string that is after the colon
+    console.log(output2); //this tells the computer to output the value of the variable output2 based on the user's input
+}
+
