@@ -9,7 +9,7 @@ Scalable Data Infrastructures
 //Calculate whether or not the user is old enough to take the driving test to get their Driver's License with or without a Driver's Permit or if they are only old enough to take the written test to get their Driver's Permit
 
 
-
+var vehicle = " "; //this acts as a placeholder for the variable vehicle until its value is changed dependent upon the user's age
 var requiredHours = 240; //this means that the value of the variable requiredHours is 240 which represents the required amount of driving hours with a Driver's Permit to take the driving test for a Driver's License
 var studentAge = prompt("Enter your age: ");  //this sets up the variable studentAge and prompts the user to enter their age
 if(studentAge === ""){
@@ -58,3 +58,6 @@ if(Number (studentAge) === Number (ageForPermit)) { //the variables studentAge a
     console.log(output2); //this tells the computer to output the value of the variable output2 based on the user's input
 }
 
+else {
+    console.log ("Sorry, you are not eligible to take any tests at this time.");// this message is what appears on the console if the user is under the age of 15 years old
+}
