@@ -30,3 +30,13 @@ if(Number (studentAge) === Number (ageForPermit)) { //the variables studentAge a
             console.log("You have accomplished " + permitHours + " hours of driving."); // this is what is outputted onto the console after the user answers the above question
 
         }
+        if (permitHours >= requiredHours) { //this sets up the if statement for what happens if the amount of driving hours that have been done by the user is greater than or equal to the amount of driving hours that are required
+            vehicle = prompt("Do you have a working vehicle with which to take the driving test? \n(yes or no, case sensitive)"); //this prompts the driver to answer the question "Do you have a working vehicle with which to take the driving test?" and then instructs them to answer yes or no with case sensitivity in mind
+            if (vehicle === "") { //this instructs the machine to execute this code if the user does not enter anything
+                vehicle = prompt("I'm sorry I didn't get that. \nDo you have a vehicle with which to take the driving test? \n(yes or no, case sensitive)"); //this is the prompt that appears if the user enters nothing
+                console.log("You answered " + vehicle + "."); // this is what is outputted onto the console once the user enters their answer into the dialog box only after they enter nothing into the initial dialog box
+            }
+        }
+        var output = (Number(permitHours) >= Number(requiredHours)) ? "You have completed enough driving hours to take the driving test for your Driver's License! " : "You need more driving hours to reach the required minimum to take the test to get your Driver's License."; //this is a ternary operation. The variables permitHours and requiredHours have been casted to change from a string that the user inputs to a number data type. This line of code determines if the user has enough driving hours to be eligible to take the test to get their Driver's License
+        console.log(output); //this line of code outputs one of the two above responses dependent upon the answer the user inputs regarding the amount of time they have driven with a permit
+
