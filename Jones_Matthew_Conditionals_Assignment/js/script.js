@@ -17,7 +17,7 @@ if(studentAge === ""){
     console.log("You are " + studentAge + ".");} //this is the output that is displayed after the student enters their age after first entering nothing
 var minAge = 16; //this sets up the variable minAge which represents the minimum age to take the test to get your Driver's License without a permit
 var ageForPermit = 15; //this is the variable for the age requirement to take the written test to get your Driver's Permit
-if(Number (studentAge) === Number (ageForPermit)) { //the variables studentAge and ageForPermit have been casted to turn the user's input into a number data type
+if(Number (studentAge) === Number (ageForPermit)) { //the variables studentAge and ageForPermit have been casted to turn the user's input into a number data type and checks if they are 15 years old before continuing onto the rest of the block of code related to the actions someone that is 15 years old would take
     var hasPermit = prompt("Do you already have your Driver's Permit? (yes or no, case sensitive)"); //this prompts the user to answer if they already have a Driver's Permit or not
     if(hasPermit != "yes"){ //this is the if statement that says if the user does not answer "yes" that the following line of code will be outputted onto the console
         console.log("You are only eligible to take the written test for your Driver's Permit."); //this is what is outputted onto the console if the user does not answer yes when asked if they have a Driver's Permit
@@ -40,3 +40,18 @@ if(Number (studentAge) === Number (ageForPermit)) { //the variables studentAge a
         var output = (Number(permitHours) >= Number(requiredHours)) ? "You have completed enough driving hours to take the driving test for your Driver's License! " : "You need more driving hours to reach the required minimum to take the test to get your Driver's License."; //this is a ternary operation. The variables permitHours and requiredHours have been casted to change from a string that the user inputs to a number data type. This line of code determines if the user has enough driving hours to be eligible to take the test to get their Driver's License
         console.log(output); //this line of code outputs one of the two above responses dependent upon the answer the user inputs regarding the amount of time they have driven with a permit
 
+        if (vehicle === "yes") { //this line of code sets up what happens if the user does have a vehicle with which to take the driving test
+            console.log("You have the required vehicle to take the driving test to get your Driver's License!"); //this is what is outputted onto the console if the user answers yes
+        }
+
+        else if (vehicle === "no") { //this line of code sets up what happens if the user does not have a vehicle with which to take the driving test
+            console.log("Sorry, you do not have the required vehicle to take the test to get your Driver's License at this time."); //this is what is outputted onto the console if the user answers no
+        }
+    }
+} else if(Number (studentAge) >= Number (minAge)) { //these variables have been casted to turn the user's inputted string into a number data type and it checks if the user is at least 16 years old before executing the rest of this block of code that would pertain to someone that is 16 years old or older
+    console.log("You are old enough to take the test to get your Driver's License!"); //if the user is 16 years old or older, the computer oututs this message onto the console
+    vehicle = prompt("Do you have a working vehicle with which to take the driving test? \n(yes or no, case sensitive)"); // after the computer has determined that the user is at least 16 years old, it asks them if they have a vehicle with which to take the driving test
+    if(vehicle === ""){ //this sets up what will happen if the user enters nothing
+        vehicle = prompt("I'm sorry I didn't get that. \nDo you have a vehicle with which to take the driving test? \n(yes or no, case sensitive)"); //this is the message that the user will get if they enter nothing into the first dialog box
+        console.log("You answered " + vehicle + "."); // this is what is outputted onto the console once the user answers the second prompt
+    }
