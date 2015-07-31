@@ -62,3 +62,10 @@ function checkNotRepeating (powerRandom, array, arrayIndex){ //This sets up the 
 //main code
 game = gameValidation(game); //this changes the value of game to be whatever the user inputs when prompted in the above code
 console.log("You have chosen to play " + game + "!"); //this is the output that will appear once the user enters which game they would like to play
+
+if (game === "PowerBall") { //this what happens if the user inputs PowerBall
+
+    powerBallNums = randomNum(1, 59, 5); //this sets up the parameters for the arguments minimum, maximum, and howMany to output the 5 PowerBall numbers between 1 and 59
+    powerBall = randomNum(1, 35, 1); //this sets up the paramets for the arguments minimum, maximum, and howMany to output the 1 number between 1 and 35 that will represent the PowerBall number
+    console.log("Your PowerBall numbers are " + powerBallNums + " with the PowerBall " + powerBall + "!"); //this is the final output if the user opts to play the PowerBall
+}
