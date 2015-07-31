@@ -27,6 +27,36 @@ function gameValidation(ballOrLotto) { //this sets up the function gameValidatio
     }
     return ballOrLotto; //this returns the value to gameValidation
 }
+function randomNum (minimum, maximum, howMany){ //this sets up the function randomNum that holds our arguments for this function
+
+    var randomNumsArray = []; //this is our array that our random numbers will come from
+    for (var x = 0; x < howMany; x++) { //this is the setup of our for loop that says that the value of x is the array index of 0 and when x is less than the value of howMany we should add another number from the array
+
+        var randomPower = Math.random() * (maximum - minimum) + minimum; //this is where we are telling the machine to choose a random number between whatever our minimum is and whatever our maximum is
+        randomPower = Math.round(randomPower); //this is where we use the Math object Math.round to rond our random number that we got from the Math.random Math object to the nearest whole number
+        var returnValue = checkNotRepeating(randomPower, randomNumsArray, x); //this line of code sets up a variable that will use the function checkNotRepeating to determine if a number has been repeated or not
+        if( returnValue === -1){ //this sets up an if statement that will execute if the random number that is scheduled to be outputted matches a random number that has already been outputted
+            x--; //this is saying that if the random number has been outputted then change the array index number by negative one. It changes by negative 1 here but when it goes back up for another cycle in the loop the x++ on line 33 will change it back to its original array index number. This will give the computer another chance to output a random number in the same spot that has not already been outputted
+        }
+        else { //this sets up what happens if the random number that has been outputted has not been outputted previously
+            randomNumsArray[x] = randomPower; //this says that if the randomNumsArray of x equals the value of randomPower move onto the next line of code
+        }
+    }
+    return randomNumsArray; // this returns the vaue of randomNumsArray to randomNum
+}
+function checkNotRepeating (powerRandom, array, arrayIndex){ //This sets up the function checkNotRepeating that will be used to make sure that none of the outputted numbers within a set have repeated
+
+    for (var y = 0; y < arrayIndex; y++){ // this is the setup of this functions for loop that says that value of y is the array index 0 and while the value of y is less than the value of arrayIndex then add 1
+        if (array [y] === powerRandom){ //this if statement says that if the array of y equals the value of powerRandom run the next line of code.
+
+            return -1; //this line of code returns -1 to checkNotRepeating
+
+        }
+
+    }
+    return 0; //this line of code means that the array of y did not equal the value of powerRandom therefore it should return 0
+
+}
 
 
 //main code
