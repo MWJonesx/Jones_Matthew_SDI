@@ -22,7 +22,7 @@ function gameValidation(ballOrLotto) { //this sets up the function gameValidatio
 
     while (ballOrLotto === "") { //this sets up the while loop. This line essentially say while the user enters nothing when asked then do that next line of code
 
-        ballOrLotto = prompt("If you really want to play you must choose, PowerBall or Florida State Lottery? (case sensitive"); //this is the prompt that the user will see if they enter nothing
+        ballOrLotto = prompt("If you really want to play you must choose, PowerBall or Florida State Lottery? (case sensitive)"; //this is the prompt that the user will see if they enter nothing
 
     }
     return ballOrLotto; //this returns the value to gameValidation
