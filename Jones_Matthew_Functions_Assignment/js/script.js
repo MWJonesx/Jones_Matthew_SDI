@@ -69,3 +69,7 @@ if (game === "PowerBall") { //this what happens if the user inputs PowerBall
     powerBall = randomNum(1, 35, 1); //this sets up the paramets for the arguments minimum, maximum, and howMany to output the 1 number between 1 and 35 that will represent the PowerBall number
     console.log("Your PowerBall numbers are " + powerBallNums + " with the PowerBall " + powerBall + "!"); //this is the final output if the user opts to play the PowerBall
 }
+else if (game === "Florida State Lottery") { //this is what happens if the user inputs Florida State Lottery
+    lotto = randomNum(1,53,6); //this sets up the parameters for the arguments minimum, maximum, and howMany to output the 6 Florida State Lottery numbers between 1 and 53
+    console.log("Your Florida State Lottery numbers are " + lotto + "!"); //this is the final output if the user opts to play the Florida State Lottery
+}
